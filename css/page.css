@@ -1,9 +1,35 @@
 .navbar {
   height: 80px;
   font-family: "KaiTi", "楷体", "楷体_GB2312";
-  ;
   width: 100%;
   z-index: 2;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear
+
+}
+
+.navbar.scoll_top{
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  z-index: 6;
+  background: rgba(255, 255, 255, .66);
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear
+
+} 
+.navbar.scoll_top .logo img{
+  height: 30px;
+  width: auto;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear
+
+}
+.navbar.scoll_top .navbar_link .tab{
+  line-height: 40px;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear
+
 }
 
 .index_top {
@@ -22,23 +48,32 @@
 .navbar .logo {
   float: left;
   padding: 1px 0;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear
 
 }
 
 .navbar .logo img {
   margin-top: 5px;
   height: 48px;
-  width: 197px;
+  width: auto;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear
+
 }
 
 .navbar .navbar_link {
   /* width: 630px; */
   float: right;
+  
 }
 
 .navbar .navbar_link .tab {
   line-height: 60px;
   float: left;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear
+
 }
 
 .navbar .navbar_link .tab a {
@@ -56,6 +91,10 @@
 .navbar .navbar_link .tab:last-child a {
   padding-right: 0;
 }
+
+
+
+
 
 
 .main {
@@ -222,10 +261,11 @@
   -webkit-writing-mode: tb-rl;
   -ms-writing-mode: tb-rl;
   writing-mode: tb-rl;
-  margin: 8px auto 0;
+  /* margin: 8px auto 0; */
   line-height: 28px;
   -webkit-transition: all .2s linear;
-  transition: all .2s linear
+  transition: all .2s linear;
+  margin-left: 27px;
 }
 
 .module1 .module1_about li:hover .time,
