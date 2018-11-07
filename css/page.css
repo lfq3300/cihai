@@ -5,31 +5,29 @@
   z-index: 2;
   -webkit-transition: all .2s linear;
   transition: all .2s linear
-
 }
 
-.navbar.scoll_top{
-  height: 60px;
+.navbar.scoll_top {
+  height: 80px;
   position: fixed;
   width: 100%;
   z-index: 6;
   background: rgba(255, 255, 255, .66);
   -webkit-transition: all .2s linear;
   transition: all .2s linear
+}
 
-} 
-.navbar.scoll_top .logo img{
-  height: 30px;
+.navbar.scoll_top .logo img {
+  height: 40px;
   width: auto;
   -webkit-transition: all .2s linear;
   transition: all .2s linear
-
 }
-.navbar.scoll_top .navbar_link .tab{
-  line-height: 40px;
+
+.navbar.scoll_top .navbar_link .tab {
+  line-height: 60px;
   -webkit-transition: all .2s linear;
   transition: all .2s linear
-
 }
 
 .index_top {
@@ -50,22 +48,20 @@
   padding: 1px 0;
   -webkit-transition: all .2s linear;
   transition: all .2s linear
-
 }
 
 .navbar .logo img {
-  margin-top: 5px;
-  height: 48px;
+  margin-top: 10px;
+  height: 40px;
   width: auto;
   -webkit-transition: all .2s linear;
   transition: all .2s linear
-
 }
 
 .navbar .navbar_link {
   /* width: 630px; */
   float: right;
-  
+
 }
 
 .navbar .navbar_link .tab {
@@ -73,7 +69,6 @@
   float: left;
   -webkit-transition: all .2s linear;
   transition: all .2s linear
-
 }
 
 .navbar .navbar_link .tab a {
@@ -215,7 +210,7 @@
 
 .module1 .txt1 {
   padding-top: 332px;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -256,7 +251,7 @@
 }
 
 .module1 .module1_about li .txt {
-  font-size: 14px;
+  font-size: 16px;
   color: #333;
   -webkit-writing-mode: tb-rl;
   -ms-writing-mode: tb-rl;
@@ -265,7 +260,7 @@
   line-height: 28px;
   -webkit-transition: all .2s linear;
   transition: all .2s linear;
-  margin-left: 27px;
+  margin: 3px 0 0 27px;
 }
 
 .module1 .module1_about li:hover .time,
@@ -277,7 +272,7 @@
 
 .module1 .txt2 {
   /* padding-top: 332px; */
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -337,7 +332,7 @@
   float: left;
   padding: 60px 47px 185px;
   border-right: linear-gradient(0deg, rgba(151, 129, 95, 1) 0%, rgba(187, 178, 158, 0) 100%);
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 3px;
   color: #333;
   -webkit-writing-mode: vertical-lr;
@@ -352,21 +347,20 @@
   float: left;
   margin-top: 60px;
   width: 2px;
-  height: 277px;
+  height: 310px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(151, 129, 95, 1)), to(rgba(187, 178, 158, 0)));
   background: linear-gradient(180deg, rgba(151, 129, 95, 1) 0%, rgba(187, 178, 158, 0) 100%);
 }
 
 .module2 .module2_content1 .txt1 {
   float: left;
-  padding: 60px 0 0 70px;
-  width: 185px;
-  height: 278px;
-  font-size: 14px;
+  padding: 60px 20px 0 39px;
+  height: 310px;
+  font-size: 16px;
   color: #333;
-  -webkit-writing-mode: tb-rl;
-  -ms-writing-mode: tb-rl;
-  writing-mode: tb-rl
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+  writing-mode: vertical-lr;
 }
 
 .module2 .module2_content1 .txt1 span {
@@ -527,7 +521,7 @@
 }
 
 .module3_wrap .news_list .info .title {
-  font-size: 18px;
+  font-size: 20px;
   color: #666;
   padding-bottom: 18px;
   text-overflow: ellipsis;
@@ -540,7 +534,7 @@
 }
 
 .module3_wrap .news_list .info .content {
-  font-size: 14px;
+  font-size: 16px;
   color: #999;
   line-height: 20px;
   height: 40px;
@@ -559,16 +553,20 @@
 .module3_wrap .news_list .info .more {
   margin-top: 18px;
   display: inline-block;
-  width: 88px;
-  height: 50px;
+  width: 97px;
+  height: 55px;
+  font-size: 18px;
   background: url(../images/img/more.png) no-repeat;
+  background-size: 100% 100%;
   color: #fff;
   text-align: center;
-  line-height: 50px;
+  line-height: 55px;
 }
 
 .module3_wrap .news_list li:hover .more {
   background: url(../images/img/more_active.png) no-repeat;
+  background-size: 100% 100%;
+
 }
 
 .module4_wrap {
@@ -628,12 +626,13 @@
   height: 440px;
   width: 440px;
   background: #fff;
-  padding: 55px 0 0 25px;
+  padding: 18px 0 0 25px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 .module4_wrap .module4_content1 .prople img {
+  margin-top: 37px;
   width: 315px;
   height: 315px;
   float: right;
@@ -641,13 +640,13 @@
 
 .module4_wrap .module4_content1 .prople .name,
 .module4_wrap .module4_content1 .prople .job {
-  font-size: 18px;
+  font-size: 20px;
   color: #333;
   -webkit-writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   float: left;
-  height: 108px;
+  height: 110px;
   text-align: center;
 }
 
@@ -662,17 +661,17 @@
 
 
 .module4_wrap .module4_content1 .txt {
-  margin: 112px 0 0 134px;
-  width: 357px;
-  height: 277px;
-  font-size: 14px;
+  margin: 72px 0 0 158px;
+  width: 324px;
+  height: 358px;
+  font-size: 16px;
   font-family: KaiTi;
   font-weight: bold;
   color: rgba(51, 51, 51, 1);
   -webkit-writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
-  /* line-height: 20px; */
+  line-height: 26px;
 }
 
 .module4_wrap .module4_content2 {
@@ -710,14 +709,14 @@
 .module4_wrap .module4_content2 .txt {
   padding-top: 139px;
   margin-left: 535px;
-  width: 357px;
-  height: 277px;
-  font-size: 14px;
+  width: 324px;
+  height: 364px;
+  font-size: 16px;
   color: #333;
   -webkit-writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
-  line-height: 22px;
+  line-height: 26px;
 }
 
 .bottom_box {
@@ -763,10 +762,10 @@
 
 .bottom_box .contact_us .tel,
 .bottom_box .contact_us .address {
-  font-size: 14px;
+  font-size: 16px;
   font-family: KaiTi;
   font-weight: bold;
-  max-width: 290px;
+  max-width: 330px;
 
 }
 
@@ -809,7 +808,7 @@
   margin-top: 140px;
   z-index: 3;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   font-family: MicrosoftYaHei;
   font-weight: 400;
   color: rgba(51, 51, 51, 1);
