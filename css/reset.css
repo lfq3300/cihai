@@ -156,3 +156,11 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
+
+
+@font-face {
+  font-family: 'KaiTi_GB2312';
+  src: url('./fonts/hinted-KaiTi_GB2312.eot');
+  font-weight: normal;
+  font-style: normal;
+}

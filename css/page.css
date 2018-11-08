@@ -1,10 +1,11 @@
 .navbar {
   height: 80px;
-  font-family: "KaiTi", "楷体", "楷体_GB2312";
+  font-family: "KaiTi", "KaiTi_GB2312", "楷体", "楷体_GB2312";
   width: 100%;
   z-index: 2;
   -webkit-transition: all .2s linear;
-  transition: all .2s linear
+  transition: all .2s linear;
+  
 }
 
 .navbar.scoll_top {
@@ -12,9 +13,11 @@
   position: fixed;
   width: 100%;
   z-index: 6;
-  background: rgba(255, 255, 255, .66);
+  background: rgba(255, 255, 255, .88);
   -webkit-transition: all .2s linear;
-  transition: all .2s linear
+  transition: all .2s linear;
+  -webkit-box-shadow: 0px 1px 6px -3px #000;
+  box-shadow: 0px 1px 6px -3px #000;
 }
 
 .navbar.scoll_top .logo img {
@@ -94,8 +97,7 @@
 
 .main {
   font-weight: bold;
-  font-family: "KaiTi", "楷体", "楷体_GB2312";
-  ;
+  font-family: "KaiTi", "KaiTi_GB2312", "楷体", "楷体_GB2312";
 }
 
 /* 轮播图样式 */
@@ -151,7 +153,8 @@
   height: 30px;
   line-height: 34px;
   width: 100%;
-  z-index: 2
+  z-index: 2;
+  cursor: pointer;
 }
 
 .carousel .circle span {
@@ -338,7 +341,7 @@
   -webkit-writing-mode: vertical-lr;
   -ms-writing-mode: tb-lr;
   writing-mode: vertical-lr;
-  font-family: "KaiTi", "楷体", "楷体_GB2312";
+  font-family: "KaiTi", "KaiTi_GB2312", "楷体", "楷体_GB2312";
   ;
   font-weight: bold;
 }
@@ -361,6 +364,8 @@
   -webkit-writing-mode: vertical-lr;
   -ms-writing-mode: tb-lr;
   writing-mode: vertical-lr;
+  font-family: "KaiTi", "KaiTi_GB2312", "楷体", "楷体_GB2312";
+
 }
 
 .module2 .module2_content1 .txt1 span {
@@ -497,7 +502,7 @@
 .module3_wrap .news_list .time em {
   display: block;
   color: #666;
-  font-family: "KaiTi", "楷体", "楷体_GB2312";
+  font-family: "KaiTi", "KaiTi_GB2312", "楷体", "楷体_GB2312";
   ;
   font-weight: bold
 }
@@ -665,7 +670,7 @@
   width: 324px;
   height: 358px;
   font-size: 16px;
-  font-family: KaiTi;
+  font-family: "KaiTi", "KaiTi_GB2312", "楷体", "楷体_GB2312";
   font-weight: bold;
   color: rgba(51, 51, 51, 1);
   -webkit-writing-mode: vertical-rl;
@@ -749,7 +754,7 @@
 .bottom_box .contact_us .tit {
   font-size: 24px;
   color: #333;
-  font-family: KaiTi;
+  font-family: "KaiTi", "KaiTi_GB2312", "楷体", "楷体_GB2312";
   font-weight: bold;
 
 }
@@ -763,7 +768,7 @@
 .bottom_box .contact_us .tel,
 .bottom_box .contact_us .address {
   font-size: 16px;
-  font-family: KaiTi;
+  font-family: "KaiTi", "KaiTi_GB2312", "楷体", "楷体_GB2312";
   font-weight: bold;
   max-width: 330px;
 
@@ -783,7 +788,7 @@
   bottom: 0;
   width: 100%;
   text-align: center;
-  font-family: KaiTi;
+  font-family: "KaiTi", "KaiTi_GB2312", "楷体", "楷体_GB2312";
   font-weight: bold;
 }
 
@@ -810,6 +815,7 @@
   text-align: center;
   font-size: 14px;
   font-family: MicrosoftYaHei;
+  /* font-family: 'KaiTi_GB2312'; */
   font-weight: 400;
   color: rgba(51, 51, 51, 1);
 }

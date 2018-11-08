@@ -76,7 +76,7 @@ $(function () {
           break;
         case 'news':
           $('html,body').animate({
-            scrollTop: $('.module3').offset().top + 90
+            scrollTop: $('.module3').offset().top + 60
           }, 600)
           break;
         case 'join':
