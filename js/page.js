@@ -60,14 +60,17 @@ $(function () {
   menuScroll('.navbar')
 })
 $(function () {
+  var queryPath = location.pathname;
+  // console.log(queryPath);
+  
   $('.navbar_link').on('click', function (e) {
     var target = e.target
     if (target.id) {
       switch (target.id) {
         case 'index':
-          $('html,body').animate({
+          /* $('html,body').animate({
             scrollTop: 0
-          }, 600)
+          }, 600) */
           break;
         case 'business':
           $('html,body').animate({
@@ -75,9 +78,9 @@ $(function () {
           }, 600)
           break;
         case 'news':
-          $('html,body').animate({
+          /* $('html,body').animate({
             scrollTop: $('.module3').offset().top + 60
-          }, 600)
+          }, 600) */
           break;
         case 'join':
           // alert('选择');
