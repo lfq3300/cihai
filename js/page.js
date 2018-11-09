@@ -61,8 +61,41 @@ $(function () {
 })
 $(function () {
   var queryPath = location.pathname;
-  // console.log(queryPath);
-  
+  var navALink = $('.navbar .tab a')
+  console.log(queryPath);
+  // 判断高度添加active
+
+  // 判断url 给a标签添加active
+  switch (queryPath) {
+    case '/':
+      $('#index').addClass('active')
+      $(window).scroll(function () {
+        console.log();
+        var contentHeight = $('body').get(0).scrollHeight;
+        var viewHeight =  $(window).height();
+        var scrollTop  = $(window).scrollTop();
+        if(window.scrollY >= $('.module2').offset().top && window.scrollY <= $('.module2').offset().top + $('.module2').height()){
+          $('.navbar .tab a').removeClass('active')
+          $('#business').addClass('active')
+        }else if(contentHeight - viewHeight == scrollTop) {
+          $('.navbar .tab a').removeClass('active')
+          $('#contact').addClass('active')
+        } else {
+          $('.navbar .tab a').removeClass('active')
+          $('#index').addClass('active')
+        }
+      });
+      break;
+    case '/news.html':
+      $('#news').addClass('active')
+      break;
+    case '/join.html':
+      $('#join').addClass('active')
+      break;
+    case '/news.html':
+      $('#contact').addClass('active')
+      break;
+  }
   $('.navbar_link').on('click', function (e) {
     var target = e.target
     if (target.id) {
@@ -71,11 +104,19 @@ $(function () {
           /* $('html,body').animate({
             scrollTop: 0
           }, 600) */
+          navALink.removeClass('active')
+          $('#index').addClass('active')
           break;
         case 'business':
-          $('html,body').animate({
-            scrollTop: $('.module2').offset().top
-          }, 600)
+          if (queryPath == '/') {
+            $('html,body').animate({
+              scrollTop: $('.module2').offset().top
+            }, 600)
+            navALink.removeClass('active')
+            $('#business').addClass('active')
+          } else {
+            window.location.href = './?modelu2'
+          }
           break;
         case 'news':
           /* $('html,body').animate({
@@ -89,8 +130,17 @@ $(function () {
           $('html,body').animate({
             scrollTop: $('.bottom_box').offset().top
           }, 600)
+          navALink.removeClass('active')
+          $('#contact').addClass('active')
           break;
       }
     }
   })
+  if (location.search == '?modelu2') {
+    $('html,body').animate({
+      scrollTop: $('.module2').offset().top
+    }, 600)
+    navALink.removeClass('active')
+    $('#business').addClass('active')
+  }
 })
