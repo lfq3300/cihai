@@ -150,11 +150,15 @@ $(function () {
           // alert('选择');
           break;
         case 'contact':
-          $('html,body').animate({
-            scrollTop: $('.bottom_box').offset().top
-          }, 600)
-          navALink.removeClass('active')
-          $('#contact').addClass('active')
+          if (queryPath == '/') {
+            $('html,body').animate({
+              scrollTop: $('.bottom_box').offset().top
+            }, 600)
+            navALink.removeClass('active')
+            $('#contact').addClass('active')
+          } else {
+            window.location.href = './?content'
+          }
           break;
       }
     }
@@ -165,5 +169,12 @@ $(function () {
     }, 600)
     navALink.removeClass('active')
     $('#business').addClass('active')
+  }
+  if(location.search == '?content'){
+    $('html,body').animate({
+      scrollTop: $('.bottom_box').offset().top
+    }, 600)
+    navALink.removeClass('active')
+    $('#contact').addClass('active')
   }
 })
