@@ -70,14 +70,13 @@ $(function () {
     case '/':
       $('#index').addClass('active')
       $(window).scroll(function () {
-        console.log();
-        var contentHeight = $('body').get(0).scrollHeight;
-        var viewHeight =  $(window).height();
-        var scrollTop  = $(window).scrollTop();
-        if(window.scrollY >= $('.module2').offset().top && window.scrollY <= $('.module2').offset().top + $('.module2').height()){
+        var contentHeight = $('body').get(0).scrollHeight; // 内容高度
+        var viewHeight = $(window).height(); // 可视高度
+        var scrollTop = $(window).scrollTop(); // 
+        if (window.scrollY >= $('.module2').offset().top && window.scrollY <= $('.module2').offset().top + $('.module2').height()) {
           $('.navbar .tab a').removeClass('active')
           $('#business').addClass('active')
-        }else if(contentHeight - viewHeight == scrollTop) {
+        } else if (contentHeight - viewHeight == scrollTop) {
           $('.navbar .tab a').removeClass('active')
           $('#contact').addClass('active')
         } else {
@@ -88,9 +87,33 @@ $(function () {
       break;
     case '/news.html':
       $('#news').addClass('active')
+      $(window).scroll(function () {
+        var contentHeight = $('body').get(0).scrollHeight; // 内容高度
+        var viewHeight = $(window).height(); // 可视高度
+        var scrollTop = $(window).scrollTop(); // 
+        if (contentHeight - viewHeight == scrollTop) {
+          $('.navbar .tab a').removeClass('active')
+          $('#contact').addClass('active')
+        } else {
+          $('.navbar .tab a').removeClass('active')
+          $('#news').addClass('active')
+        }
+      });
       break;
     case '/join.html':
       $('#join').addClass('active')
+      $(window).scroll(function () {
+        var contentHeight = $('body').get(0).scrollHeight; // 内容高度
+        var viewHeight = $(window).height(); // 可视高度
+        var scrollTop = $(window).scrollTop(); // 
+        if (contentHeight - viewHeight == scrollTop) {
+          $('.navbar .tab a').removeClass('active')
+          $('#contact').addClass('active')
+        } else {
+          $('.navbar .tab a').removeClass('active')
+          $('#join').addClass('active')
+        }
+      });
       break;
     case '/news.html':
       $('#contact').addClass('active')
