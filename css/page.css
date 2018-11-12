@@ -960,12 +960,12 @@
 
 .joinbox .join_content .claim .tit {
   float: left;
-
   font-size: 20px;
   color: #333;
   -webkit-writing-mode: vertical-lr;
   -ms-writing-mode: tb-lr;
   writing-mode: vertical-lr;
+  width: 30px;
 }
 
 .joinbox .join_content .claim ul {
